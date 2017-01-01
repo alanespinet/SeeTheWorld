@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Signika";
+    src: url("../font/Signika/Signika-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Signika";
+    src: url("../font/Signika/Signika-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}

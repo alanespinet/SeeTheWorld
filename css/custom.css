@@ -1,0 +1,87 @@
+body {
+  background-color: #cacfd2;
+}
+
+.header {
+  height: 100vh;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+
+  background-image: url('../img/back.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 0;
+}
+
+.header div {
+  padding-top: 35vh;
+  width: 100%;
+  color: #fff;
+}
+
+.header h1 {
+  font-family: 'Signika';
+  font-weight: bold;
+  font-size: 10rem;
+}
+
+.header p,
+.navbar a {
+  font-family: 'Roboto';
+}
+
+.header h1,
+.header p {
+  text-shadow: 2px 2px 2px #444;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.header-nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(100, 108, 110, .5);
+}
+
+.navbar a,
+.navbar a:visited,
+.navbar a:active {
+  color: #fff;
+  text-shadow: 1px 1px 1px #444;
+  transition: color .3s ease-out;
+  font-size: 1.7rem;
+}
+
+
+.header-nav ul.nav a:hover {
+  background-color: transparent !important;
+  color: #bbb !important;
+  text-shadow: none !important;
+}
+
+.navbar li {
+  background-color: transparent;
+}
+
+.collapser-button {
+  background-color: transparent;
+}
+
+.collapser-button .icon-bars {
+  color: rgba(255, 255, 255, .8);
+  text-shadow: 1px 1px 1px #444;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.arrow-down {
+  font-size: 10rem;
+  margin-top: 6rem;
+}
