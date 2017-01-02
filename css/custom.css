@@ -22,8 +22,11 @@ body {
   color: #fff;
 }
 
-.header h1 {
+h1 {
   font-family: 'Signika';
+}
+
+.header h1 {
   font-weight: bold;
   font-size: 10rem;
 }
@@ -84,4 +87,33 @@ i {
 .arrow-down {
   font-size: 10rem;
   margin-top: 6rem;
+}
+
+section {
+  padding-bottom: 6rem;
+}
+
+section h1 {
+  font-size: 6rem;
+  padding-bottom: 2rem;
+}
+
+#carousell-images {
+  opacity: .8;
+}
+
+.container {
+  width: 85%;
+}
+
+.pe-icons h4 {
+  display: inline-block;
+}
+
+.pe-icons div {
+  padding: 20px 0;
+}
+
+#locations {
+  background-color: #fff;
 }
