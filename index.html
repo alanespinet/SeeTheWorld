@@ -95,7 +95,7 @@
         <div class="col-xs-12 col-md-6 pe-icons">
           <div class="row text-center">
             <div class="col-xs-12 col-lg-6">
-              <a href=""><i class="pe-7s-map-2 pe-5x pe-va"></i><h4>Locations</h4></a>
+              <a href="#locations"><i class="pe-7s-map-2 pe-5x pe-va"></i><h4>Locations</h4></a>
             </div>
 
             <div class="col-xs-12 col-lg-6">
@@ -117,12 +117,42 @@
 
 
     <!-- Locations -->
-      <section id="locations">
-        <div class="container">
-          <div class="row">
-            <h1 class="text-center">Available Locations</h1>
-          </div><!-- row -->
-        </div><!-- container -->
+      <section id="locations" ng-app="myApp">
+        <div class="locs">
+          <div class="container">
+            <div class="row" ng-controller="locationsController">
+              <h1 class="text-center">Available Locations</h1>
+              <div class="col-xs-12 col-md-6 col-lg-4 card" ng-repeat="loc in locations">
+                <location-dir info="loc" rindex="{{$index}}"></location-dir>
+              </div>
+            </div><!-- row -->
+          </div><!-- container -->
+        </div><!-- locs -->
+
+        <div class="locs loc-description">
+          <div class="container">
+            <h1 class="text-center" id="locationName">Location Name</h1>
+            <hr>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <p id="desc">Description</p>
+                <div class="row" id="location-images">
+                  <div class="col-xs-12 col-md-6"><img id="imgCar1" class="img-responsive location-image" alt=""></div>
+                  <div class="col-xs-12 col-md-6"><img id="imgCar2" class="img-responsive location-image" alt=""></div>
+                </div>
+                <p id="desc1">Description1</p>
+              </div>
+
+              <div class="col-xs-12 col-md-6">
+                <h2 id="price"><i class="pe-7s-credit pe-2x pe-va"></i>Prize: $299.00</h2>
+                <h2 id="duration"><i class="pe-7s-clock pe-2x pe-va"></i>Duration: 2 days and 1 night</h2>
+                <h2 id="available"><i class="pe-7s-date pe-2x pe-va"></i>Available: Whole year</h2>
+                <h2 id="discounts"><i class="pe-7s-like2 pe-2x pe-va"></i>Discounts: Whole year</h2>
+              </div>
+            </div><!-- row -->
+          </div><!-- container -->
+        </div><!-- locs -->
+
       </section><!-- /Locations -->
 
 
@@ -130,5 +160,11 @@
   <script src="vendor/jquery/jquery.min.js" charset="utf-8"></script>
   <script src="vendor/tether/tether.min.js" charset="utf-8"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="vendor/angular/angular.min.js" charset="utf-8"></script>
+
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/controllers.js" charset="utf-8"></script>
+  <script src="js/locationDirective.js" charset="utf-8"></script>
+  <script src="js/locationsHandler.js" charset="utf-8"></script>
 </body>
 </html>

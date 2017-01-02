@@ -1,5 +1,12 @@
+h1, h2, h3, h4, h5, h6, p, ul {
+  padding: 0;
+  margin: 0;
+
+}
+
 body {
   background-color: #cacfd2;
+  overflow-x: hidden;
 }
 
 .header {
@@ -95,7 +102,7 @@ section {
 
 section h1 {
   font-size: 6rem;
-  padding-bottom: 2rem;
+  padding: 4rem 0;
 }
 
 #carousell-images {
@@ -115,5 +122,74 @@ section h1 {
 }
 
 #locations {
-  background-color: #fff;
+  width: 200vw;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+
+  left: 0px;
+  transition: left .4s ease;
+  background-color: #e6e6fa;
+}
+
+#locations hr {
+  border: 1px solid rgb(204, 208, 210);
+}
+
+.card {
+  /*border: 10px solid white;*/
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card h2 {
+  position: relative;
+  color: gray;
+  transition: all 1s ease-out;
+}
+
+.card img {
+  border-radius: 100%;
+  transition: opacity .3s ease-out;
+}
+
+.card:hover img {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.card:hover h2 {
+  color: black;
+}
+
+
+.locs {
+  width: 100vw;
+}
+
+.locs h2 {
+  padding: 1rem 0 1rem 4rem;
+  font-family: 'Signika';
+}
+
+.locs p {
+  text-align: justify;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.locs i {
+  padding-right: 3rem !important;
+  color: teal;
+}
+
+.location-image {
+  border-radius: 5px !important;
+  margin: 10px;
+}
+
+#location-images {
+  width: 100% !important;
+  margin: 0 auto !important;
 }
