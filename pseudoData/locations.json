@@ -21,7 +21,7 @@
     "duration": "4 days and 3 nights",
     "available": "Only Summer",
     "discounts": "Yes",
-    "images": []
+    "images": ["pcf01.jpg", "pcf02.jpg"]
   },
   {
     "name": "Seaworld, Orlando",
@@ -33,7 +33,7 @@
     "duration": "1 day",
     "available": "Whole year",
     "discounts": "Yes",
-    "images": []
+    "images": ["swo01.jpg", "swo02.jpg"]
   },
   {
     "name": "Roma",
@@ -45,7 +45,7 @@
     "duration": "3 days and 2 nights",
     "available": "Whole year",
     "discounts": "Yes",
-    "images": []
+    "images": ["rom01.jpg", "rom02.jpg"]
   },
   {
     "name": "Greece",
@@ -57,7 +57,7 @@
     "duration": "3 days and 2 nights",
     "available": "Whole year",
     "discounts": "Yes",
-    "images": []
+    "images": ["gre01.jpg", "gre02.jpg"]
   },
   {
     "name": "Paris Catacumbs",
@@ -69,7 +69,7 @@
     "duration": "1 day",
     "available": "Only June and July",
     "discounts": "No",
-    "images": []
+    "images": ["par01.jpg", "par02.jpg"]
   },
   {
     "name": "Gizeh",
@@ -81,7 +81,7 @@
     "duration": "4 days and 3 nights",
     "available": "Whole year",
     "discounts": "No",
-    "images": []
+    "images": ["giz01.jpg", "giz02.jpg"]
   },
   {
     "name": "Chineese Wall",
@@ -93,6 +93,6 @@
     "duration": "2 days and 1 night",
     "available": "Whole year but Febrary",
     "discounts": "Yes",
-    "images": []
+    "images": ["cwa01.jpg", "cwa02.jpg"]
   }
 ]

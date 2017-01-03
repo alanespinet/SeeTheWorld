@@ -137,7 +137,6 @@ section h1 {
 }
 
 .card {
-  /*border: 10px solid white;*/
   padding: 10px;
   border-radius: 5px;
 }
@@ -167,7 +166,7 @@ section h1 {
   width: 100vw;
 }
 
-.locs h2 {
+.locs h3 {
   padding: 1rem 0 1rem 4rem;
   font-family: 'Signika';
 }
@@ -187,9 +186,127 @@ section h1 {
 .location-image {
   border-radius: 5px !important;
   margin: 10px;
+  transition: all .3s ease-out;
+}
+
+.location-image:hover {
+  cursor: pointer;
+  opacity: .5;
+  transform: scale(1.1);
 }
 
 #location-images {
   width: 100% !important;
   margin: 0 auto !important;
+}
+
+.img-restricted {
+  width: 70%;
+  border-radius: 20px;
+  border: solid 10px silver;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations-button {
+  width: 70%;
+  transform: scaleY(1.2);
+  display: block;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+#location-name-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#back-arrow {
+  transition: all .3s ease-out;
+}
+
+#back-arrow:hover {
+  cursor: pointer;
+  color: rgb(0, 180, 180);
+}
+
+#register h3 {
+  color: 	#2f4f4f;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  text-shadow: 1px 1px 1px gray;
+}
+
+#register h3.first-header {
+  padding-top: 0rem;
+}
+
+#register .control-wrapper {
+  padding: 0.5rem 0.4rem;
+}
+
+#register input[type="text"],
+#register select {
+  transform: scaleY(1.2);
+  font-size: 1.5rem;
+}
+
+
+#register label {
+  font-size: 2rem;
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 2rem;
+  transform: scaleY(1.2);
+}
+
+.data-form {
+  padding: 0 4rem;
+}
+
+#access-profile {
+  background-color: teal;
+}
+
+.remenber-info {
+  padding-top: 14rem;
+}
+
+#register ul {
+  list-style-type: none;
+}
+
+#register li {
+  padding: 15px 30px;
+  font-size: 1.8rem;
+  border-bottom: 1px solid silver;
+  text-shadow: 1px 1px 1px gray;
+}
+
+#register li:hover {
+  background-color: rgba(119, 136, 153, .15);
+}
+
+#register li:first-child {
+  border-top: 1px solid silver;
+}
+
+#footer {
+  background-color: black;
+  padding: 0;
+}
+
+#footer h4 {
+  color: silver;
+  text-shadow: 1px 1px 1px gray;
+  font-style: italic;
+  padding: 2rem 0;
 }

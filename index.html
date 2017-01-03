@@ -32,11 +32,11 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
             <li><a href="#mission">Mission</a></li>
-            <li><a href="#">Locations</a></li>
+            <li><a href="#locations">Locations</a></li>
             <li><a href="#">Plan a Trip</a></li>
             <li>&nbsp;</li>
-            <li><a href="#"><i class="fa fa-sign-in"></i>Register</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#register"><i class="fa fa-sign-in"></i>Register</a></li>
+            <li><a href="#signup-form">Sign up</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -131,7 +131,10 @@
 
         <div class="locs loc-description">
           <div class="container">
-            <h1 class="text-center" id="locationName">Location Name</h1>
+            <div id="location-name-container">
+              <h1><i class="pe-7s-left-arrow" id="back-arrow"></i></h1>
+              <h1 class="text-center" id="locationName">Location Name</h1>
+            </div>
             <hr>
             <div class="row">
               <div class="col-xs-12 col-md-6">
@@ -144,10 +147,14 @@
               </div>
 
               <div class="col-xs-12 col-md-6">
-                <h2 id="price"><i class="pe-7s-credit pe-2x pe-va"></i>Prize: $299.00</h2>
-                <h2 id="duration"><i class="pe-7s-clock pe-2x pe-va"></i>Duration: 2 days and 1 night</h2>
-                <h2 id="available"><i class="pe-7s-date pe-2x pe-va"></i>Available: Whole year</h2>
-                <h2 id="discounts"><i class="pe-7s-like2 pe-2x pe-va"></i>Discounts: Whole year</h2>
+                <h3 id="price"><i class="pe-7s-credit pe-2x pe-va"></i>Prize: $299.00</h3>
+                <h3 id="duration"><i class="pe-7s-clock pe-2x pe-va"></i>Duration: 2 days and 1 night</h3>
+                <h3 id="available"><i class="pe-7s-date pe-2x pe-va"></i>Available: Whole year</h3>
+                <h3 id="discounts"><i class="pe-7s-like2 pe-2x pe-va"></i>Discounts: Whole year</h3>
+
+                <form>
+                  <button type="button" id="locations-button" class="btn btn-primary locations-button">Please Register or Sign up to Apply</button>
+                </form>
               </div>
             </div><!-- row -->
           </div><!-- container -->
@@ -155,7 +162,119 @@
 
       </section><!-- /Locations -->
 
+      <section id="register">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-6 data-form" id="register-form">
+              <h1 class="text-center">Register</h1>
+              <form>
+                <h3 class="first-header">Personal Info:</h3>
 
+                <div class="control-wrapper">
+                  <label for="user-name"><i class="fa fa-user"></i>First Name:</label>
+                  <input type="text" id="user-name" name="userName" class="form-control" placeholder="your first (given) name" />
+                </div>
+
+                <div class="control-wrapper">
+                  <label for="user-name"><i class="fa fa-users"></i>Last Name:</label>
+                  <input type="text" id="user-last" name="userLast" class="form-control" placeholder="your last (family) name"/>
+                </div>
+
+                <div class="control-wrapper">
+                  <label for="user-email"><i class="fa fa-envelope"></i>Email:</label>
+                  <input type="text" id="user-email" name="userEmail" class="form-control" placeholder="a valid email address"/>
+                </div>
+
+                <h3 id="paymanet-header">Payment Info:</h3>
+
+                  <div class="col-xs-12 control-wrapper">
+                    <label for="card-number"><i class="fa fa-credit-card-alt"></i>Card Number:</label>
+                    <input type="text" id="card-number" name="cardNumber" class="form-control" placeholder="the front number of your card"/>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 control-wrapper">
+                    <label for="card-month"><i class="fa fa-calendar"></i>Exp. Month:</label>
+                    <select class="form-control" id="card-month" name="cardMonth">
+                      <option value="black"></option>
+                      <option value="Jan">Jan</option>
+                      <option value="Feb">Feb</option>
+                      <option value="Mar">Mar</option>
+                      <option value="Apr">Apr</option>
+                      <option value="May">May</option>
+                      <option value="Jun">Jun</option>
+                      <option value="Jul">Jul</option>
+                      <option value="Agu">Agu</option>
+                      <option value="Sep">Sep</option>
+                      <option value="Oct">Oct</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dec">Dec</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xs-12 col-md-3 control-wrapper">
+                    <label for="card-year"><i class="fa fa-calendar"></i>Exp. Year:</label>
+                    <select class="form-control" id="card-year" name="cardYear">
+                      <option value="black"></option>
+                      <option value="2017">2017</option>
+                      <option value="2017">2018</option>
+                      <option value="2017">2019</option>
+                      <option value="2017">2020</option>
+                      <option value="2017">2021</option>
+                      <option value="2017">2022</option>
+                    </select>
+                  </div>
+
+                  <div class="col-xs-12 col-md-6 control-wrapper">
+                    <label for="card-code"><i class="fa fa-credit-card"></i>Card Code:</label>
+                    <input type="text" id="card-code" name="cardCode" class="form-control" placeholder="number in the back"/>
+                  </div>
+
+                  <div class="control-wrapper col-xs-12 col-md-4 col-md-offset-8">
+                    <button type="button" id="submit-register" class="btn btn-primary register-button">Submit Info</button>
+                  </div>
+              </form>
+            </div>
+
+            <div class="col-xs-12 col-lg-6 data-form" id="signup-form">
+              <h1 class="text-center">Sign Up</h1>
+              <form>
+                <h3 class="first-header">User Info:</h3>
+
+                <div class="control-wrapper">
+                  <label for="user-email-su"><i class="fa fa-envelope"></i>Email:</label>
+                  <input type="text" id="user-email-su" name="userEmailSU" class="form-control" placeholder="a valid email address"/>
+                </div>
+
+                <div class="col-xs-12 control-wrapper">
+                  <label for="card-number-su"><i class="fa fa-credit-card-alt"></i>Card Number:</label>
+                  <input type="text" id="card-number-su" name="cardNumberSU" class="form-control" placeholder="the front number of your card"/>
+                </div>
+
+                <div class="control-wrapper col-xs-12 col-md-4 col-md-offset-8">
+                  <button type="button" id="access-profile" class="btn btn-primary register-button">Access Profile</button>
+                </div>
+              </form>
+
+              <div class="remenber-info hidden-xs hidden-sm">
+                <h3>Always remember when filling out:</h3>
+                <ul>
+                  <li>Names must begin with a Letter</li>
+                  <li>Email must be a valid address</li>
+                  <li>Card Number must have 16 numbers</li>
+                  <li>Card Code must have 3 or more numbers</li>
+                </ul>
+              </div>
+              </div><!-- Inner row -->
+            </div>
+          </div><!-- row -->
+        </div><!-- container -->
+      </section>
+
+  <section id="footer">
+    <div class="container">
+      <h4 class="text-center">Created by Alan Espinet, FVI College</h4>
+    </div>
+  </section>
 
   <script src="vendor/jquery/jquery.min.js" charset="utf-8"></script>
   <script src="vendor/tether/tether.min.js" charset="utf-8"></script>
